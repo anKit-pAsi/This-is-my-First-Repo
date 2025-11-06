@@ -1,4 +1,6 @@
-print("Simple Calculator Program!")
+while True:
+
+    print("Simple Calculator Program!")
 
 
 # Here calculator Simple Program
@@ -35,3 +37,8 @@ if user >= 18:
 
 else:
     print(f"{'Not Eligible':>28}")
+
+
+
+
+
