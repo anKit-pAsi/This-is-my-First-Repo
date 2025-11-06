@@ -1,5 +1,4 @@
 while True:
-
     print("Simple Calculator Program!")
 
 
