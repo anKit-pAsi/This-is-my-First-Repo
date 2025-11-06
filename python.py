@@ -32,3 +32,7 @@ elif operators == "**":
 
 else:
     print("Invalid Symbol!")
+
+# User Voting Syestem
+
+print(f"{'*#':^40}")
