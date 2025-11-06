@@ -35,4 +35,12 @@ else:
 
 # User Voting Syestem
 
-print(f"{'*#':^40}")
+print(f"{'*#######*':>20}{'User Voting System'}{'*#######*'}\n")
+
+user  = int(input(f"{'Enter your age: ':>30}"))
+
+if user >= 18:
+    print(f"{'You Eligible To Vote':>33}")
+
+else:
+    print(f"{'Not Eligible':>28}")
