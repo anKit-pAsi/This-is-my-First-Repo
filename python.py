@@ -1,38 +1,52 @@
 while True:
-    print("Simple Calculator Program!")
 
+    print("\n*######*Main Menu*######*")
+    print("Press 1 Go to Calculator")
+    print("Press 2 Go to Voting System")
+    print("Press 3 Exit")
 
-# Here calculator Simple Program
+    choice = input("Enter Your Choise 1/2/3")
 
-# Calculator Extra Function
+    if choice == "1":
+        print("\n Simple Calculator")
 
-    user = int(input("Enter first number: "))
-    user1 = int(input("Enter second number: "))
-    operators = input("Choose Symbol + - * /: ")
+        a = int(input("Enter first number: "))
+        b = int(input("Enter second number: "))
+        operators = input("Choose Symbol | +, -, *, /: ")
 
-    if operators == "+":
-        print(user + user1)
+        if operators == "+":
+            print(a + b)
 
-    elif operators == "-":
-        print(user - user1)
+        elif operators == "-":
+            print(a - b)
 
-    elif operators == "*":
-        print(user * user1)
+        elif operators == "*":
+            print(a * b)
 
-    elif operators == "/":
-        print(user / user1)
+        elif operators == "/":
+            print(a / b)
+
+        else:
+            print("Invalid Symbol")
+
+        print("\n Press enter go to main menu")            
+
+    elif choice == "2":
+        # Simple Voting System
+
+        user = int(input("Enter Your age: "))
+
+        if user >= 18:
+            print("You Eligible to Vote")
+
+        else:
+            print("Not Eligible to voting")
+
+        input("\n Press enter to go main menu")
+    
+    elif choice == "3":
+        print("Thanks for using the program")
+        break
 
     else:
-        print("Invalid Symbol!")
-
-# User Voting Syestem
-
-    print(f"{'*#######*':>20}{'User Voting System'}{'*#######*'}\n")
-
-    user  = int(input(f"{'Enter your age: ':>30}"))
-
-    if user >= 18:
-        print(f"{'You Eligible To Vote':>33}")
-
-    else:
-        print(f"{'Not Eligible':>28}")
+        print("Invalid choice! Please Try Again...")
