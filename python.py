@@ -5,10 +5,10 @@ while True:
     print("Press 2 Go to Voting System")
     print("Press 3 Exit")
 
-    choice = input("Enter Your Choise 1/2/3")
+    choice = input("\n Enter Your Choise 1/2/3: ")
 
     if choice == "1":
-        print("\n Simple Calculator")
+        print("\n ---------|Simple Calculator|----------")
 
         a = int(input("Enter first number: "))
         b = int(input("Enter second number: "))
