@@ -12,7 +12,7 @@ while True:
 
         a = int(input("Enter first number: "))
         b = int(input("Enter second number: "))
-        operators = input("Choose Symbol | +, -, *, /: ")
+        operators = input("Choose Symbol | +, -, *, /, //, %, **: ")
 
         if operators == "+":
             print(a + b)
@@ -26,6 +26,14 @@ while True:
         elif operators == "/":
             print(a / b)
 
+        elif operators == "//":
+            print(a // b)
+
+        elif operators == "%":
+            print(a % b)
+
+        elif operators == "**":
+            print(a**b)
         else:
             print("Invalid Symbol")
 
@@ -34,6 +42,7 @@ while True:
     elif choice == "2":
         # Simple Voting System
 
+        print("======#Simple Voting System#=====")
         user = int(input("Enter Your age: "))
 
         if user >= 18:
@@ -50,3 +59,5 @@ while True:
 
     else:
         print("Invalid choice! Please Try Again...")
+
+
